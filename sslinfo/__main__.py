@@ -1,5 +1,10 @@
+from .args import CommandArgs
+
+
 def main():
-    print("Hello")
+    cmd = CommandArgs()
+    cmd.parse()
+    cmd.run()
 
 
 if __name__ == "__main__":
